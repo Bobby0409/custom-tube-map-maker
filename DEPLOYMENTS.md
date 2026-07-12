@@ -1,5 +1,20 @@
 # Deployments
 
+## 2026-07-12T18:47:06Z - Production deployment
+
+- Production URL: https://custom-tube-map-maker.mytubemap.workers.dev
+- Cloudflare version ID: `85aa3c2c-5785-4fbe-98eb-d1972118379d`
+- Git SHA: `5eb4d573fdfebfe74cb42264a1378bcf2a2254c7`
+- Git tag: `prod-2026-07-12-header-polish`
+- Previous production Git SHA: `b3c599c183e68a6ad9695a0af279254557d446eb`
+- Verified diff command: `git diff --stat b3c599c183e68a6ad9695a0af279254557d446eb..5eb4d573fdfebfe74cb42264a1378bcf2a2254c7`
+- Wrangler command: `npx wrangler deploy --config wrangler.json` from `dist/server`
+- Validation: repository path, branch, clean worktree, local HEAD and `origin/main` SHA checks; staged-file review; targeted secret scan; `npm run lint`; `npm test`; `npm run build`; production HTTP 200 check.
+- Smoke test: production showed `Custom Tube Map Maker` as the main title, `Build your own London Tube network`, the original custom-route SVG icon, no `.roundel` element, no `Live map`, `Your Tube map`, no `Report a map issue`, linked `© OpenStreetMap contributors`, `Send app feedback`, and the visible unofficial Transport for London disclaimer.
+- Workflow smoke test: production line building created `Line 2`; branch building created `Branch 2`; selecting Baker Street and Bond Street showed `2 stations selected`; PNG export was enabled and the app reported `PNG downloaded.`
+- Mobile smoke test: checked `430px`, `390px`, `375px`, and `320px`; no horizontal overflow; header did not overlap workspace; title, subtitle, and `Your Tube map` remained single-line; attribution stayed inside the map and did not overlap controls.
+- Smoke-test limitation: the in-app browser did not emit a download event for the programmatic PNG download, so export verification is based on the app success state and absence of console errors rather than an inspected downloaded file.
+
 ## 2026-07-12T17:39:56Z - Production deployment
 
 - Production URL: https://custom-tube-map-maker.mytubemap.workers.dev

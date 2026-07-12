@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-12T18:47:06Z
+
+- Updated the page header to use the product name as the main title, a new subtitle, and the visible unofficial Transport for London disclaimer.
+- Replaced the old TfL-like roundel treatment with an original custom-route SVG icon.
+- Renamed the workspace heading to `Your Tube map`, removed the misleading `Live map` label, and simplified map attribution to OpenStreetMap plus app feedback.
+- Deployed Git SHA `5eb4d573fdfebfe74cb42264a1378bcf2a2254c7` to production with Cloudflare version `85aa3c2c-5785-4fbe-98eb-d1972118379d`.
+- Production tag: `prod-2026-07-12-header-polish`.
+
 ## 2026-07-12T17:39:56Z
 
 - Polished the pre-promotion live map copy: singular/plural counts now read naturally, selected stations are labelled clearly, and first-time users see a short prompt to search or tap the map.
