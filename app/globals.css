@@ -66,7 +66,7 @@ button:disabled {
 }
 
 .app-header {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   gap: 18px;
   justify-content: space-between;
@@ -74,32 +74,73 @@ button:disabled {
   max-width: 1500px;
 }
 
-.app-header p {
+.header-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.app-subtitle,
+.project-disclaimer {
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 800;
   margin: 0;
+}
+
+.project-disclaimer {
+  max-width: 390px;
   text-align: right;
 }
 
 .wordmark {
   align-items: center;
   display: inline-flex;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  font-weight: 900;
   gap: 11px;
   min-width: 0;
 }
 
-.roundel {
-  background:
-    linear-gradient(90deg, transparent 0 31%, var(--line-red) 31% 69%, transparent 69%),
-    radial-gradient(circle, var(--panel) 0 34%, var(--line-red) 35% 54%, transparent 55%);
-  border-radius: 999px;
-  display: inline-block;
+.wordmark h1 {
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.wordmark:focus-visible,
+.osm-attribution a:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid rgba(0, 152, 212, 0.45);
+  outline-offset: 3px;
+}
+
+.route-mark {
   flex: 0 0 auto;
   height: 34px;
-  width: 34px;
+  overflow: visible;
+  width: 44px;
+}
+
+.route-mark-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
+}
+
+.route-mark-main {
+  stroke: var(--line-blue);
+}
+
+.route-mark-branch {
+  stroke: var(--line-green);
+}
+
+.route-mark-node {
+  fill: var(--paper);
+  stroke: var(--foreground);
+  stroke-width: 2.2;
 }
 
 .maker-layout {
@@ -137,15 +178,7 @@ button:disabled {
   padding: 22px 24px;
 }
 
-.panel-kicker {
-  color: var(--line-red);
-  font-size: 0.76rem;
-  font-weight: 900;
-  margin: 0 0 6px;
-  text-transform: uppercase;
-}
-
-.map-toolbar h1 {
+.map-toolbar h2 {
   font-size: clamp(1.8rem, 4vw, 3.5rem);
   font-weight: 900;
   line-height: 0.96;
@@ -699,11 +732,31 @@ button:disabled {
   .app-header {
     align-items: flex-start;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     margin-bottom: 8px;
   }
 
-  .app-header p {
+  .wordmark {
+    gap: 9px;
+  }
+
+  .wordmark h1 {
+    font-size: clamp(1.08rem, 5.3vw, 1.45rem);
+  }
+
+  .route-mark {
+    height: 30px;
+    width: 39px;
+  }
+
+  .app-subtitle,
+  .project-disclaimer {
+    font-size: 0.84rem;
+    line-height: 1.3;
+  }
+
+  .project-disclaimer {
+    max-width: none;
     text-align: left;
   }
 
@@ -715,7 +768,7 @@ button:disabled {
     padding: 14px;
   }
 
-  .map-toolbar h1 {
+  .map-toolbar h2 {
     font-size: clamp(1.8rem, 11vw, 3rem);
   }
 
@@ -794,6 +847,7 @@ button:disabled {
     font-size: 0.7rem;
     left: 16px;
     right: auto;
+    row-gap: 4px;
   }
 
   .control-section {

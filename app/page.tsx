@@ -2457,19 +2457,34 @@ export default function Home() {
   return (
     <main className="app-shell">
       <header className="app-header">
-        <Link className="wordmark" href="/" aria-label="Custom Tube Map Maker home">
-          <span className="roundel" aria-hidden="true" />
-          <span>Custom Tube Map Maker</span>
-        </Link>
-        <p>Unofficial fan-made London line builder</p>
+        <div className="header-copy">
+          <Link className="wordmark" href="/" aria-label="Custom Tube Map Maker home">
+            <svg
+              aria-hidden="true"
+              className="route-mark"
+              focusable="false"
+              viewBox="0 0 44 34"
+            >
+              <path className="route-mark-line route-mark-main" d="M7 26 L19 18 L32 18" />
+              <path className="route-mark-line route-mark-branch" d="M19 18 L31 7" />
+              <circle className="route-mark-node" cx="7" cy="26" r="4" />
+              <circle className="route-mark-node" cx="19" cy="18" r="4" />
+              <circle className="route-mark-node" cx="32" cy="18" r="4" />
+            </svg>
+            <h1>Custom Tube Map Maker</h1>
+          </Link>
+          <p className="app-subtitle">Build your own London Tube network</p>
+        </div>
+        <p className="project-disclaimer">
+          Unofficial fan-made project. Not affiliated with Transport for London.
+        </p>
       </header>
 
       <section className="maker-layout" aria-label="Custom Tube line builder">
         <div className="map-panel">
           <div className="map-toolbar">
             <div>
-              <p className="panel-kicker">Live map</p>
-              <h1>{displayMapName}</h1>
+              <h2>Your Tube map</h2>
               <p className="map-start-hint">
                 Search for a station or tap one on the map to begin.
               </p>
@@ -2623,9 +2638,7 @@ export default function Home() {
               <a href="https://www.openstreetmap.org/copyright">
                 © OpenStreetMap contributors
               </a>
-              <a href="https://www.openstreetmap.org/fixthemap">
-                Report a map issue
-              </a>
+              <span aria-hidden="true">·</span>
               <a href={APP_FEEDBACK_URL}>Send app feedback</a>
             </div>
             <svg

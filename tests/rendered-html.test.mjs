@@ -41,7 +41,14 @@ test("server-renders the Custom Tube Map Maker app", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Custom Tube Map Maker<\/title>/i);
-  assert.match(html, /Unofficial fan-made London line builder/i);
+  assert.match(html, /Custom Tube Map Maker/i);
+  assert.match(html, /Build your own London Tube network/i);
+  assert.match(
+    html,
+    /Unofficial fan-made project\. Not affiliated with Transport for London\./i,
+  );
+  assert.match(html, /Your Tube map/i);
+  assert.match(html, /My Tube Line/i);
   assert.match(html, /Search for a station or tap one on the map to begin/i);
   assert.match(html, /Find station/i);
   assert.match(html, /stations selected/i);
@@ -53,8 +60,10 @@ test("server-renders the Custom Tube Map Maker app", async () => {
   assert.match(html, /Add branch/i);
   assert.match(html, /Zoom in/i);
   assert.match(html, /Centre on London/i);
-  assert.match(html, /OpenStreetMap contributors/i);
+  assert.match(html, /© OpenStreetMap contributors/i);
   assert.match(html, /Send app feedback/i);
+  assert.doesNotMatch(html, /Live map/i);
+  assert.doesNotMatch(html, /Report a map issue/i);
   assert.match(html, /https:\/\/tile\.openstreetmap\.org\//i);
   assert.match(html, /Download PNG/i);
   assert.match(html, /Baker Street/i);
@@ -66,7 +75,6 @@ test("server-renders the Custom Tube Map Maker app", async () => {
   assert.match(html, /Shepherd&#x27;s Bush/i);
   assert.match(html, /Heathrow Terminals 2 &amp; 3/i);
   assert.match(html, /Reading/i);
-  assert.match(html, /Not affiliated with Transport for London/i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
   assert.doesNotMatch(html, /See the launch plan|Explore the MVP/i);
 });
