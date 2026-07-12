@@ -1,0 +1,3587 @@
+[
+  {
+    "id": "abbey-wood",
+    "name": "Abbey Wood",
+    "lat": 51.491259,
+    "lon": 0.121079,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "acton-central",
+    "name": "Acton Central",
+    "lat": 51.508674,
+    "lon": -0.262915,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "acton-main-line",
+    "name": "Acton Main Line",
+    "lat": 51.516964,
+    "lon": -0.26822,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "acton-town",
+    "name": "Acton Town",
+    "lat": 51.502871,
+    "lon": -0.280065,
+    "lines": [
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "aldgate",
+    "name": "Aldgate",
+    "lat": 51.514143,
+    "lon": -0.075526,
+    "lines": [
+      "Circle",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "aldgate-east",
+    "name": "Aldgate East",
+    "lat": 51.515316,
+    "lon": -0.071666,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "alperton",
+    "name": "Alperton",
+    "lat": 51.540677,
+    "lon": -0.299718,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "amersham",
+    "name": "Amersham",
+    "lat": 51.674044,
+    "lon": -0.607545,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "anerley",
+    "name": "Anerley",
+    "lat": 51.412379,
+    "lon": -0.065598,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "angel",
+    "name": "Angel",
+    "lat": 51.531829,
+    "lon": -0.106066,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "archway",
+    "name": "Archway",
+    "lat": 51.565094,
+    "lon": -0.134791,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "arnos-grove",
+    "name": "Arnos Grove",
+    "lat": 51.616304,
+    "lon": -0.133061,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "arsenal",
+    "name": "Arsenal",
+    "lat": 51.558678,
+    "lon": -0.107764,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "baker-street",
+    "name": "Baker Street",
+    "lat": 51.522876,
+    "lon": -0.157166,
+    "lines": [
+      "Bakerloo",
+      "Circle",
+      "Hammersmith & City",
+      "Jubilee",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "balham",
+    "name": "Balham",
+    "lat": 51.443615,
+    "lon": -0.152584,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "bank",
+    "name": "Bank",
+    "lat": 51.513056,
+    "lon": -0.088704,
+    "lines": [
+      "Central",
+      "Northern",
+      "Waterloo & City"
+    ]
+  },
+  {
+    "id": "barbican",
+    "name": "Barbican",
+    "lat": 51.520299,
+    "lon": -0.097997,
+    "lines": [
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "barking",
+    "name": "Barking",
+    "lat": 51.539523,
+    "lon": 0.080836,
+    "lines": [
+      "District",
+      "Hammersmith & City",
+      "Overground"
+    ]
+  },
+  {
+    "id": "barking-riverside",
+    "name": "Barking Riverside",
+    "lat": 51.520273,
+    "lon": 0.116598,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "barkingside",
+    "name": "Barkingside",
+    "lat": 51.585745,
+    "lon": 0.088636,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "barons-court",
+    "name": "Barons Court",
+    "lat": 51.490391,
+    "lon": -0.213925,
+    "lines": [
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "battersea-power-station",
+    "name": "Battersea Power Station",
+    "lat": 51.479932,
+    "lon": -0.142142,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "bayswater",
+    "name": "Bayswater",
+    "lat": 51.512325,
+    "lon": -0.188099,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "becontree",
+    "name": "Becontree",
+    "lat": 51.540358,
+    "lon": 0.127041,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "belsize-park",
+    "name": "Belsize Park",
+    "lat": 51.55036,
+    "lon": -0.164732,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "bermondsey",
+    "name": "Bermondsey",
+    "lat": 51.497808,
+    "lon": -0.063899,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "bethnal-green",
+    "name": "Bethnal Green",
+    "lat": 51.525488,
+    "lon": -0.057339,
+    "lines": [
+      "Central",
+      "Overground"
+    ]
+  },
+  {
+    "id": "blackfriars",
+    "name": "Blackfriars",
+    "lat": 51.511104,
+    "lon": -0.103601,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "blackhorse-road",
+    "name": "Blackhorse Road",
+    "lat": 51.586735,
+    "lon": -0.041352,
+    "lines": [
+      "Victoria",
+      "Overground"
+    ]
+  },
+  {
+    "id": "bond-street",
+    "name": "Bond Street",
+    "lat": 51.514063,
+    "lon": -0.14934,
+    "lines": [
+      "Central",
+      "Jubilee",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "borough",
+    "name": "Borough",
+    "lat": 51.501042,
+    "lon": -0.093492,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "boston-manor",
+    "name": "Boston Manor",
+    "lat": 51.495627,
+    "lon": -0.324776,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "bounds-green",
+    "name": "Bounds Green",
+    "lat": 51.607068,
+    "lon": -0.124441,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "bow-road",
+    "name": "Bow Road",
+    "lat": 51.526944,
+    "lon": -0.025032,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "brent-cross",
+    "name": "Brent Cross",
+    "lat": 51.576683,
+    "lon": -0.213612,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "brentwood",
+    "name": "Brentwood",
+    "lat": 51.613619,
+    "lon": 0.299962,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "brixton",
+    "name": "Brixton",
+    "lat": 51.462685,
+    "lon": -0.114469,
+    "lines": [
+      "Victoria"
+    ]
+  },
+  {
+    "id": "brockley",
+    "name": "Brockley",
+    "lat": 51.46423,
+    "lon": -0.037756,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "bromley-by-bow",
+    "name": "Bromley-by-Bow",
+    "lat": 51.524688,
+    "lon": -0.011833,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "brondesbury",
+    "name": "Brondesbury",
+    "lat": 51.545102,
+    "lon": -0.202465,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "brondesbury-park",
+    "name": "Brondesbury Park",
+    "lat": 51.540761,
+    "lon": -0.210082,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "bruce-grove",
+    "name": "Bruce Grove",
+    "lat": 51.593653,
+    "lon": -0.070029,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "buckhurst-hill",
+    "name": "Buckhurst Hill",
+    "lat": 51.626593,
+    "lon": 0.046732,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "burnham-berks",
+    "name": "Burnham (Berks)",
+    "lat": 51.523506,
+    "lon": -0.646374,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "burnt-oak",
+    "name": "Burnt Oak",
+    "lat": 51.602837,
+    "lon": -0.264079,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "bush-hill-park",
+    "name": "Bush Hill Park",
+    "lat": 51.641741,
+    "lon": -0.069433,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "bushey",
+    "name": "Bushey",
+    "lat": 51.645812,
+    "lon": -0.385128,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "caledonian-road",
+    "name": "Caledonian Road",
+    "lat": 51.548661,
+    "lon": -0.118425,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "caledonian-road-and-barnsbury",
+    "name": "Caledonian Road & Barnsbury",
+    "lat": 51.543243,
+    "lon": -0.116158,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "cambridge-heath",
+    "name": "Cambridge Heath",
+    "lat": 51.532056,
+    "lon": -0.057396,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "camden-road",
+    "name": "Camden Road",
+    "lat": 51.541825,
+    "lon": -0.138974,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "camden-town",
+    "name": "Camden Town",
+    "lat": 51.539279,
+    "lon": -0.142709,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "canada-water",
+    "name": "Canada Water",
+    "lat": 51.498028,
+    "lon": -0.04969,
+    "lines": [
+      "Jubilee",
+      "Overground"
+    ]
+  },
+  {
+    "id": "canary-wharf",
+    "name": "Canary Wharf",
+    "lat": 51.504694,
+    "lon": -0.018678,
+    "lines": [
+      "Jubilee",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "canning-town",
+    "name": "Canning Town",
+    "lat": 51.514048,
+    "lon": 0.007867,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "cannon-street",
+    "name": "Cannon Street",
+    "lat": 51.511421,
+    "lon": -0.090409,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "canonbury",
+    "name": "Canonbury",
+    "lat": 51.548652,
+    "lon": -0.092659,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "canons-park",
+    "name": "Canons Park",
+    "lat": 51.607933,
+    "lon": -0.294805,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "carpenders-park",
+    "name": "Carpenders Park",
+    "lat": 51.627915,
+    "lon": -0.385613,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "chadwell-heath",
+    "name": "Chadwell Heath",
+    "lat": 51.568067,
+    "lon": 0.129176,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "chalfont-and-latimer",
+    "name": "Chalfont & Latimer",
+    "lat": 51.668007,
+    "lon": -0.560622,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "chalk-farm",
+    "name": "Chalk Farm",
+    "lat": 51.544182,
+    "lon": -0.153482,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "chancery-lane",
+    "name": "Chancery Lane",
+    "lat": 51.518282,
+    "lon": -0.111913,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "charing-cross",
+    "name": "Charing Cross",
+    "lat": 51.508084,
+    "lon": -0.126448,
+    "lines": [
+      "Bakerloo",
+      "Northern"
+    ]
+  },
+  {
+    "id": "chesham",
+    "name": "Chesham",
+    "lat": 51.705208,
+    "lon": -0.611247,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "cheshunt",
+    "name": "Cheshunt",
+    "lat": 51.702592,
+    "lon": -0.023982,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "chigwell",
+    "name": "Chigwell",
+    "lat": 51.617696,
+    "lon": 0.075276,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "chingford",
+    "name": "Chingford",
+    "lat": 51.633179,
+    "lon": 0.010003,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "chiswick-park",
+    "name": "Chiswick Park",
+    "lat": 51.494673,
+    "lon": -0.268004,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "chorleywood",
+    "name": "Chorleywood",
+    "lat": 51.65406,
+    "lon": -0.518324,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "clapham-common",
+    "name": "Clapham Common",
+    "lat": 51.462038,
+    "lon": -0.137485,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "clapham-high-street",
+    "name": "Clapham High Street",
+    "lat": 51.465517,
+    "lon": -0.132338,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "clapham-junction",
+    "name": "Clapham Junction",
+    "lat": 51.464103,
+    "lon": -0.169852,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "clapham-north",
+    "name": "Clapham North",
+    "lat": 51.465364,
+    "lon": -0.129729,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "clapham-south",
+    "name": "Clapham South",
+    "lat": 51.452968,
+    "lon": -0.147373,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "clapton",
+    "name": "Clapton",
+    "lat": 51.561701,
+    "lon": -0.056849,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "cockfosters",
+    "name": "Cockfosters",
+    "lat": 51.651514,
+    "lon": -0.149114,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "colindale",
+    "name": "Colindale",
+    "lat": 51.595479,
+    "lon": -0.250004,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "colliers-wood",
+    "name": "Colliers Wood",
+    "lat": 51.418386,
+    "lon": -0.177809,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "covent-garden",
+    "name": "Covent Garden",
+    "lat": 51.513062,
+    "lon": -0.124384,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "crouch-hill",
+    "name": "Crouch Hill",
+    "lat": 51.571532,
+    "lon": -0.11674,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "croxley",
+    "name": "Croxley",
+    "lat": 51.647202,
+    "lon": -0.441226,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "crystal-palace",
+    "name": "Crystal Palace",
+    "lat": 51.417924,
+    "lon": -0.07241,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "custom-house",
+    "name": "Custom House",
+    "lat": 51.512039,
+    "lon": 0.026889,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "dagenham-east",
+    "name": "Dagenham East",
+    "lat": 51.544127,
+    "lon": 0.165638,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "dagenham-heathway",
+    "name": "Dagenham Heathway",
+    "lat": 51.541597,
+    "lon": 0.146876,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "dalston-junction",
+    "name": "Dalston Junction",
+    "lat": 51.546103,
+    "lon": -0.075152,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "dalston-kingsland",
+    "name": "Dalston Kingsland",
+    "lat": 51.548227,
+    "lon": -0.07614,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "debden",
+    "name": "Debden",
+    "lat": 51.645229,
+    "lon": 0.084011,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "denmark-hill",
+    "name": "Denmark Hill",
+    "lat": 51.468229,
+    "lon": -0.089307,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "dollis-hill",
+    "name": "Dollis Hill",
+    "lat": 51.55199,
+    "lon": -0.238797,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "ealing-broadway",
+    "name": "Ealing Broadway",
+    "lat": 51.514982,
+    "lon": -0.301578,
+    "lines": [
+      "Central",
+      "District",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "ealing-common",
+    "name": "Ealing Common",
+    "lat": 51.510032,
+    "lon": -0.288221,
+    "lines": [
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "earl-s-court",
+    "name": "Earl's Court",
+    "lat": 51.491834,
+    "lon": -0.193681,
+    "lines": [
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "east-acton",
+    "name": "East Acton",
+    "lat": 51.51696,
+    "lon": -0.247672,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "east-finchley",
+    "name": "East Finchley",
+    "lat": 51.587227,
+    "lon": -0.164998,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "east-ham",
+    "name": "East Ham",
+    "lat": 51.539215,
+    "lon": 0.051875,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "east-putney",
+    "name": "East Putney",
+    "lat": 51.458869,
+    "lon": -0.211172,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "eastcote",
+    "name": "Eastcote",
+    "lat": 51.576565,
+    "lon": -0.396823,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "edgware",
+    "name": "Edgware",
+    "lat": 51.613595,
+    "lon": -0.274966,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "edgware-road",
+    "name": "Edgware Road",
+    "lat": 51.520039,
+    "lon": -0.168668,
+    "lines": [
+      "Bakerloo",
+      "Circle",
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "edmonton-green",
+    "name": "Edmonton Green",
+    "lat": 51.624647,
+    "lon": -0.061293,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "elephant-and-castle",
+    "name": "Elephant & Castle",
+    "lat": 51.495132,
+    "lon": -0.100481,
+    "lines": [
+      "Bakerloo",
+      "Northern"
+    ]
+  },
+  {
+    "id": "elm-park",
+    "name": "Elm Park",
+    "lat": 51.549659,
+    "lon": 0.197932,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "embankment",
+    "name": "Embankment",
+    "lat": 51.506979,
+    "lon": -0.122572,
+    "lines": [
+      "Bakerloo",
+      "Circle",
+      "District",
+      "Northern"
+    ]
+  },
+  {
+    "id": "emerson-park",
+    "name": "Emerson Park",
+    "lat": 51.568679,
+    "lon": 0.220303,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "enfield-town",
+    "name": "Enfield Town",
+    "lat": 51.651892,
+    "lon": -0.079102,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "epping",
+    "name": "Epping",
+    "lat": 51.693595,
+    "lon": 0.11377,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "euston",
+    "name": "Euston",
+    "lat": 51.528119,
+    "lon": -0.133229,
+    "lines": [
+      "Northern",
+      "Victoria",
+      "Overground"
+    ]
+  },
+  {
+    "id": "euston-square",
+    "name": "Euston Square",
+    "lat": 51.525616,
+    "lon": -0.135502,
+    "lines": [
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "fairlop",
+    "name": "Fairlop",
+    "lat": 51.595865,
+    "lon": 0.091145,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "farringdon",
+    "name": "Farringdon",
+    "lat": 51.520295,
+    "lon": -0.104995,
+    "lines": [
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "finchley-central",
+    "name": "Finchley Central",
+    "lat": 51.60095,
+    "lon": -0.192656,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "finchley-road",
+    "name": "Finchley Road",
+    "lat": 51.547105,
+    "lon": -0.180174,
+    "lines": [
+      "Jubilee",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "finchley-road-and-frognal",
+    "name": "Finchley Road & Frognal",
+    "lat": 51.550044,
+    "lon": -0.183871,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "finsbury-park",
+    "name": "Finsbury Park",
+    "lat": 51.564422,
+    "lon": -0.106044,
+    "lines": [
+      "Piccadilly",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "forest-gate",
+    "name": "Forest Gate",
+    "lat": 51.549336,
+    "lon": 0.024166,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "forest-hill",
+    "name": "Forest Hill",
+    "lat": 51.439103,
+    "lon": -0.053117,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "fulham-broadway",
+    "name": "Fulham Broadway",
+    "lat": 51.480314,
+    "lon": -0.195168,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "gants-hill",
+    "name": "Gants Hill",
+    "lat": 51.576516,
+    "lon": 0.065419,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "gidea-park",
+    "name": "Gidea Park",
+    "lat": 51.58206,
+    "lon": 0.206022,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "gloucester-road",
+    "name": "Gloucester Road",
+    "lat": 51.494288,
+    "lon": -0.183043,
+    "lines": [
+      "Circle",
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "golders-green",
+    "name": "Golders Green",
+    "lat": 51.572379,
+    "lon": -0.194039,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "goldhawk-road",
+    "name": "Goldhawk Road",
+    "lat": 51.501847,
+    "lon": -0.226745,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "goodge-street",
+    "name": "Goodge Street",
+    "lat": 51.52065,
+    "lon": -0.134402,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "goodmayes",
+    "name": "Goodmayes",
+    "lat": 51.565608,
+    "lon": 0.111034,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "gospel-oak",
+    "name": "Gospel Oak",
+    "lat": 51.555451,
+    "lon": -0.151288,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "grange-hill",
+    "name": "Grange Hill",
+    "lat": 51.613279,
+    "lon": 0.09222,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "great-portland-street",
+    "name": "Great Portland Street",
+    "lat": 51.52384,
+    "lon": -0.144094,
+    "lines": [
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "green-park",
+    "name": "Green Park",
+    "lat": 51.506654,
+    "lon": -0.142078,
+    "lines": [
+      "Jubilee",
+      "Piccadilly",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "greenford",
+    "name": "Greenford",
+    "lat": 51.542474,
+    "lon": -0.345581,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "gunnersbury",
+    "name": "Gunnersbury",
+    "lat": 51.491608,
+    "lon": -0.275393,
+    "lines": [
+      "District",
+      "Overground"
+    ]
+  },
+  {
+    "id": "hackney-central",
+    "name": "Hackney Central",
+    "lat": 51.547121,
+    "lon": -0.056158,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hackney-downs",
+    "name": "Hackney Downs",
+    "lat": 51.54868,
+    "lon": -0.06088,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hackney-wick",
+    "name": "Hackney Wick",
+    "lat": 51.54329,
+    "lon": -0.024709,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "haggerston",
+    "name": "Haggerston",
+    "lat": 51.538644,
+    "lon": -0.075597,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hainault",
+    "name": "Hainault",
+    "lat": 51.603654,
+    "lon": 0.09339,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "hammersmith",
+    "name": "Hammersmith",
+    "lat": 51.492699,
+    "lon": -0.224175,
+    "lines": [
+      "Circle",
+      "District",
+      "Hammersmith & City",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "hampstead",
+    "name": "Hampstead",
+    "lat": 51.556307,
+    "lon": -0.177798,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "hampstead-heath",
+    "name": "Hampstead Heath",
+    "lat": 51.555304,
+    "lon": -0.165216,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hanger-lane",
+    "name": "Hanger Lane",
+    "lat": 51.53025,
+    "lon": -0.293182,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "hanwell",
+    "name": "Hanwell",
+    "lat": 51.511861,
+    "lon": -0.338554,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "harlesden",
+    "name": "Harlesden",
+    "lat": 51.536291,
+    "lon": -0.257678,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "harold-wood",
+    "name": "Harold Wood",
+    "lat": 51.593042,
+    "lon": 0.233482,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "harringay-green-lanes",
+    "name": "Harringay Green Lanes",
+    "lat": 51.577288,
+    "lon": -0.098024,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "harrow-and-wealdstone",
+    "name": "Harrow & Wealdstone",
+    "lat": 51.592217,
+    "lon": -0.334987,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "harrow-on-the-hill",
+    "name": "Harrow-on-the-Hill",
+    "lat": 51.579136,
+    "lon": -0.336874,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "hatch-end",
+    "name": "Hatch End",
+    "lat": 51.609604,
+    "lon": -0.368479,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hatton-cross",
+    "name": "Hatton Cross",
+    "lat": 51.466511,
+    "lon": -0.423468,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "hayes-and-harlington",
+    "name": "Hayes & Harlington",
+    "lat": 51.503016,
+    "lon": -0.420398,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "headstone-lane",
+    "name": "Headstone Lane",
+    "lat": 51.602595,
+    "lon": -0.356798,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "heathrow-terminal-4",
+    "name": "Heathrow Terminal 4",
+    "lat": 51.458533,
+    "lon": -0.445954,
+    "lines": [
+      "Piccadilly",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "heathrow-terminal-5",
+    "name": "Heathrow Terminal 5",
+    "lat": 51.470775,
+    "lon": -0.489519,
+    "lines": [
+      "Piccadilly",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "heathrow-terminals-2-and-3",
+    "name": "Heathrow Terminals 2 & 3",
+    "lat": 51.471584,
+    "lon": -0.453417,
+    "lines": [
+      "Piccadilly",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "hendon-central",
+    "name": "Hendon Central",
+    "lat": 51.583276,
+    "lon": -0.226396,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "high-barnet",
+    "name": "High Barnet",
+    "lat": 51.650576,
+    "lon": -0.194224,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "high-street-kensington",
+    "name": "High Street Kensington",
+    "lat": 51.500617,
+    "lon": -0.192377,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "highams-park",
+    "name": "Highams Park",
+    "lat": 51.608642,
+    "lon": -0.000301,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "highbury-and-islington",
+    "name": "Highbury & Islington",
+    "lat": 51.546009,
+    "lon": -0.104017,
+    "lines": [
+      "Victoria",
+      "Overground"
+    ]
+  },
+  {
+    "id": "highgate",
+    "name": "Highgate",
+    "lat": 51.577667,
+    "lon": -0.145861,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "hillingdon",
+    "name": "Hillingdon",
+    "lat": 51.553633,
+    "lon": -0.450206,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "holborn",
+    "name": "Holborn",
+    "lat": 51.51762,
+    "lon": -0.119957,
+    "lines": [
+      "Central",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "holland-park",
+    "name": "Holland Park",
+    "lat": 51.507156,
+    "lon": -0.205726,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "holloway-road",
+    "name": "Holloway Road",
+    "lat": 51.55278,
+    "lon": -0.113221,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "homerton",
+    "name": "Homerton",
+    "lat": 51.547058,
+    "lon": -0.042791,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "honor-oak-park",
+    "name": "Honor Oak Park",
+    "lat": 51.450296,
+    "lon": -0.045387,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hornchurch",
+    "name": "Hornchurch",
+    "lat": 51.554085,
+    "lon": 0.218577,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "hounslow-central",
+    "name": "Hounslow Central",
+    "lat": 51.471304,
+    "lon": -0.366329,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "hounslow-east",
+    "name": "Hounslow East",
+    "lat": 51.473452,
+    "lon": -0.356225,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "hounslow-west",
+    "name": "Hounslow West",
+    "lat": 51.473489,
+    "lon": -0.386035,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "hoxton",
+    "name": "Hoxton",
+    "lat": 51.531588,
+    "lon": -0.075774,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "hyde-park-corner",
+    "name": "Hyde Park Corner",
+    "lat": 51.502895,
+    "lon": -0.15311,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "ickenham",
+    "name": "Ickenham",
+    "lat": 51.561826,
+    "lon": -0.442161,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "ilford",
+    "name": "Ilford",
+    "lat": 51.55909,
+    "lon": 0.069181,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "imperial-wharf",
+    "name": "Imperial Wharf",
+    "lat": 51.475423,
+    "lon": -0.183174,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "iver",
+    "name": "Iver",
+    "lat": 51.508472,
+    "lon": -0.506679,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "kennington",
+    "name": "Kennington",
+    "lat": 51.488394,
+    "lon": -0.105807,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "kensal-green",
+    "name": "Kensal Green",
+    "lat": 51.530546,
+    "lon": -0.22494,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "kensal-rise",
+    "name": "Kensal Rise",
+    "lat": 51.534482,
+    "lon": -0.220133,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "kensington-olympia",
+    "name": "Kensington (Olympia)",
+    "lat": 51.497594,
+    "lon": -0.210253,
+    "lines": [
+      "District",
+      "Overground"
+    ]
+  },
+  {
+    "id": "kentish-town",
+    "name": "Kentish Town",
+    "lat": 51.550343,
+    "lon": -0.140675,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "kentish-town-west",
+    "name": "Kentish Town West",
+    "lat": 51.546753,
+    "lon": -0.146709,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "kenton",
+    "name": "Kenton",
+    "lat": 51.581771,
+    "lon": -0.316901,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "kew-gardens",
+    "name": "Kew Gardens",
+    "lat": 51.47698,
+    "lon": -0.285132,
+    "lines": [
+      "District",
+      "Overground"
+    ]
+  },
+  {
+    "id": "kilburn",
+    "name": "Kilburn",
+    "lat": 51.547118,
+    "lon": -0.204328,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "kilburn-high-road",
+    "name": "Kilburn High Road",
+    "lat": 51.537575,
+    "lon": -0.19174,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "kilburn-park",
+    "name": "Kilburn Park",
+    "lat": 51.535086,
+    "lon": -0.194151,
+    "lines": [
+      "Bakerloo"
+    ]
+  },
+  {
+    "id": "king-s-cross-st-pancras",
+    "name": "King's Cross St Pancras",
+    "lat": 51.530735,
+    "lon": -0.122901,
+    "lines": [
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan",
+      "Northern",
+      "Piccadilly",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "kingsbury",
+    "name": "Kingsbury",
+    "lat": 51.584651,
+    "lon": -0.278485,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "knightsbridge",
+    "name": "Knightsbridge",
+    "lat": 51.501544,
+    "lon": -0.160974,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "ladbroke-grove",
+    "name": "Ladbroke Grove",
+    "lat": 51.517395,
+    "lon": -0.210614,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "lambeth-north",
+    "name": "Lambeth North",
+    "lat": 51.498603,
+    "lon": -0.111555,
+    "lines": [
+      "Bakerloo"
+    ]
+  },
+  {
+    "id": "lancaster-gate",
+    "name": "Lancaster Gate",
+    "lat": 51.511784,
+    "lon": -0.175006,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "langley-berks",
+    "name": "Langley (Berks)",
+    "lat": 51.507887,
+    "lon": -0.54143,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "latimer-road",
+    "name": "Latimer Road",
+    "lat": 51.513461,
+    "lon": -0.21781,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "leicester-square",
+    "name": "Leicester Square",
+    "lat": 51.511698,
+    "lon": -0.128179,
+    "lines": [
+      "Northern",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "leyton",
+    "name": "Leyton",
+    "lat": 51.556832,
+    "lon": -0.005176,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "leyton-midland-road",
+    "name": "Leyton Midland Road",
+    "lat": 51.569537,
+    "lon": -0.00741,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "leytonstone",
+    "name": "Leytonstone",
+    "lat": 51.56832,
+    "lon": 0.008251,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "leytonstone-high-road",
+    "name": "Leytonstone High Road",
+    "lat": 51.563761,
+    "lon": 0.007897,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "liverpool-street",
+    "name": "Liverpool Street",
+    "lat": 51.517837,
+    "lon": -0.082092,
+    "lines": [
+      "Central",
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan",
+      "Overground",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "london-bridge",
+    "name": "London Bridge",
+    "lat": 51.505621,
+    "lon": -0.08843,
+    "lines": [
+      "Jubilee",
+      "Northern"
+    ]
+  },
+  {
+    "id": "london-fields",
+    "name": "London Fields",
+    "lat": 51.541472,
+    "lon": -0.057821,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "loughton",
+    "name": "Loughton",
+    "lat": 51.641055,
+    "lon": 0.055892,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "maida-vale",
+    "name": "Maida Vale",
+    "lat": 51.529657,
+    "lon": -0.185585,
+    "lines": [
+      "Bakerloo"
+    ]
+  },
+  {
+    "id": "maidenhead",
+    "name": "Maidenhead",
+    "lat": 51.518487,
+    "lon": -0.722457,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "manor-house",
+    "name": "Manor House",
+    "lat": 51.570457,
+    "lon": -0.09637,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "manor-park",
+    "name": "Manor Park",
+    "lat": 51.552343,
+    "lon": 0.045908,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "mansion-house",
+    "name": "Mansion House",
+    "lat": 51.511842,
+    "lon": -0.094612,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "marble-arch",
+    "name": "Marble Arch",
+    "lat": 51.513466,
+    "lon": -0.158168,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "maryland",
+    "name": "Maryland",
+    "lat": 51.546018,
+    "lon": 0.005817,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "marylebone",
+    "name": "Marylebone",
+    "lat": 51.522047,
+    "lon": -0.163264,
+    "lines": [
+      "Bakerloo"
+    ]
+  },
+  {
+    "id": "mile-end",
+    "name": "Mile End",
+    "lat": 51.525321,
+    "lon": -0.033459,
+    "lines": [
+      "Central",
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "mill-hill-east",
+    "name": "Mill Hill East",
+    "lat": 51.60821,
+    "lon": -0.209915,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "monument",
+    "name": "Monument",
+    "lat": 51.510723,
+    "lon": -0.086069,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "moor-park",
+    "name": "Moor Park",
+    "lat": 51.629751,
+    "lon": -0.432136,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "moorgate",
+    "name": "Moorgate",
+    "lat": 51.518545,
+    "lon": -0.088577,
+    "lines": [
+      "Circle",
+      "Hammersmith & City",
+      "Metropolitan",
+      "Northern"
+    ]
+  },
+  {
+    "id": "morden",
+    "name": "Morden",
+    "lat": 51.402282,
+    "lon": -0.194833,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "mornington-crescent",
+    "name": "Mornington Crescent",
+    "lat": 51.534487,
+    "lon": -0.138571,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "neasden",
+    "name": "Neasden",
+    "lat": 51.554168,
+    "lon": -0.250171,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "new-cross",
+    "name": "New Cross",
+    "lat": 51.476593,
+    "lon": -0.03274,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "new-cross-gate",
+    "name": "New Cross Gate",
+    "lat": 51.47545,
+    "lon": -0.040597,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "newbury-park",
+    "name": "Newbury Park",
+    "lat": 51.575606,
+    "lon": 0.090037,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "nine-elms",
+    "name": "Nine Elms",
+    "lat": 51.479912,
+    "lon": -0.128476,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "north-acton",
+    "name": "North Acton",
+    "lat": 51.523547,
+    "lon": -0.259716,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "north-ealing",
+    "name": "North Ealing",
+    "lat": 51.517705,
+    "lon": -0.288572,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "north-greenwich",
+    "name": "North Greenwich",
+    "lat": 51.500438,
+    "lon": 0.00477,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "north-harrow",
+    "name": "North Harrow",
+    "lat": 51.585011,
+    "lon": -0.362672,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "north-wembley",
+    "name": "North Wembley",
+    "lat": 51.562549,
+    "lon": -0.3039,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "northfields",
+    "name": "Northfields",
+    "lat": 51.499543,
+    "lon": -0.313856,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "northolt",
+    "name": "Northolt",
+    "lat": 51.548342,
+    "lon": -0.369018,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "northwick-park",
+    "name": "Northwick Park",
+    "lat": 51.578455,
+    "lon": -0.317701,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "northwood",
+    "name": "Northwood",
+    "lat": 51.611,
+    "lon": -0.423927,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "northwood-hills",
+    "name": "Northwood Hills",
+    "lat": 51.600531,
+    "lon": -0.409104,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "norwood-junction",
+    "name": "Norwood Junction",
+    "lat": 51.397195,
+    "lon": -0.07495,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "notting-hill-gate",
+    "name": "Notting Hill Gate",
+    "lat": 51.508893,
+    "lon": -0.196485,
+    "lines": [
+      "Central",
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "oakwood",
+    "name": "Oakwood",
+    "lat": 51.647478,
+    "lon": -0.131667,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "old-street",
+    "name": "Old Street",
+    "lat": 51.525593,
+    "lon": -0.087759,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "osterley",
+    "name": "Osterley",
+    "lat": 51.481408,
+    "lon": -0.35196,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "oval",
+    "name": "Oval",
+    "lat": 51.481734,
+    "lon": -0.112487,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "oxford-circus",
+    "name": "Oxford Circus",
+    "lat": 51.515565,
+    "lon": -0.141889,
+    "lines": [
+      "Bakerloo",
+      "Central",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "paddington",
+    "name": "Paddington",
+    "lat": 51.516747,
+    "lon": -0.176745,
+    "lines": [
+      "Bakerloo",
+      "Circle",
+      "District",
+      "Hammersmith & City",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "park-royal",
+    "name": "Park Royal",
+    "lat": 51.526749,
+    "lon": -0.284144,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "parsons-green",
+    "name": "Parsons Green",
+    "lat": 51.475179,
+    "lon": -0.201447,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "peckham-rye",
+    "name": "Peckham Rye",
+    "lat": 51.469927,
+    "lon": -0.069841,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "penge-west",
+    "name": "Penge West",
+    "lat": 51.417555,
+    "lon": -0.060821,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "perivale",
+    "name": "Perivale",
+    "lat": 51.536642,
+    "lon": -0.323045,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "piccadilly-circus",
+    "name": "Piccadilly Circus",
+    "lat": 51.509856,
+    "lon": -0.134936,
+    "lines": [
+      "Bakerloo",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "pimlico",
+    "name": "Pimlico",
+    "lat": 51.489169,
+    "lon": -0.134132,
+    "lines": [
+      "Victoria"
+    ]
+  },
+  {
+    "id": "pinner",
+    "name": "Pinner",
+    "lat": 51.592785,
+    "lon": -0.381204,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "plaistow",
+    "name": "Plaistow",
+    "lat": 51.53124,
+    "lon": 0.017024,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "preston-road",
+    "name": "Preston Road",
+    "lat": 51.572056,
+    "lon": -0.295335,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "putney-bridge",
+    "name": "Putney Bridge",
+    "lat": 51.468286,
+    "lon": -0.208778,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "queen-s-park",
+    "name": "Queen's Park",
+    "lat": 51.534145,
+    "lon": -0.205081,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "queens-road-peckham",
+    "name": "Queens Road Peckham",
+    "lat": 51.473683,
+    "lon": -0.057337,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "queensbury",
+    "name": "Queensbury",
+    "lat": 51.59414,
+    "lon": -0.286019,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "queensway",
+    "name": "Queensway",
+    "lat": 51.51036,
+    "lon": -0.187198,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "ravenscourt-park",
+    "name": "Ravenscourt Park",
+    "lat": 51.494128,
+    "lon": -0.235881,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "rayners-lane",
+    "name": "Rayners Lane",
+    "lat": 51.575162,
+    "lon": -0.371319,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "reading",
+    "name": "Reading",
+    "lat": 51.458786,
+    "lon": -0.971856,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "rectory-road",
+    "name": "Rectory Road",
+    "lat": 51.558994,
+    "lon": -0.06865,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "redbridge",
+    "name": "Redbridge",
+    "lat": 51.576233,
+    "lon": 0.0461,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "regent-s-park",
+    "name": "Regent's Park",
+    "lat": 51.523195,
+    "lon": -0.146335,
+    "lines": [
+      "Bakerloo"
+    ]
+  },
+  {
+    "id": "richmond",
+    "name": "Richmond",
+    "lat": 51.463159,
+    "lon": -0.301358,
+    "lines": [
+      "District",
+      "Overground"
+    ]
+  },
+  {
+    "id": "rickmansworth",
+    "name": "Rickmansworth",
+    "lat": 51.640208,
+    "lon": -0.473552,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "roding-valley",
+    "name": "Roding Valley",
+    "lat": 51.617316,
+    "lon": 0.043792,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "romford",
+    "name": "Romford",
+    "lat": 51.574831,
+    "lon": 0.182958,
+    "lines": [
+      "Overground",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "rotherhithe",
+    "name": "Rotherhithe",
+    "lat": 51.500817,
+    "lon": -0.052048,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "royal-oak",
+    "name": "Royal Oak",
+    "lat": 51.51909,
+    "lon": -0.188412,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "ruislip",
+    "name": "Ruislip",
+    "lat": 51.571364,
+    "lon": -0.421594,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "ruislip-gardens",
+    "name": "Ruislip Gardens",
+    "lat": 51.560743,
+    "lon": -0.410796,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "ruislip-manor",
+    "name": "Ruislip Manor",
+    "lat": 51.573366,
+    "lon": -0.412434,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "russell-square",
+    "name": "Russell Square",
+    "lat": 51.523311,
+    "lon": -0.124347,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "seven-kings",
+    "name": "Seven Kings",
+    "lat": 51.563968,
+    "lon": 0.096506,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "seven-sisters",
+    "name": "Seven Sisters",
+    "lat": 51.582651,
+    "lon": -0.074227,
+    "lines": [
+      "Victoria",
+      "Overground"
+    ]
+  },
+  {
+    "id": "shadwell",
+    "name": "Shadwell",
+    "lat": 51.511342,
+    "lon": -0.056845,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "shenfield",
+    "name": "Shenfield",
+    "lat": 51.630761,
+    "lon": 0.329788,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "shepherd-s-bush",
+    "name": "Shepherd's Bush",
+    "lat": 51.504981,
+    "lon": -0.218192,
+    "lines": [
+      "Central",
+      "Overground"
+    ]
+  },
+  {
+    "id": "shepherd-s-bush-market",
+    "name": "Shepherd's Bush Market",
+    "lat": 51.505842,
+    "lon": -0.226355,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "shoreditch-high-street",
+    "name": "Shoreditch High Street",
+    "lat": 51.523432,
+    "lon": -0.075609,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "silver-street",
+    "name": "Silver Street",
+    "lat": 51.615316,
+    "lon": -0.066949,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "sloane-square",
+    "name": "Sloane Square",
+    "lat": 51.492306,
+    "lon": -0.156184,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "slough",
+    "name": "Slough",
+    "lat": 51.51195,
+    "lon": -0.591717,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "snaresbrook",
+    "name": "Snaresbrook",
+    "lat": 51.580678,
+    "lon": 0.02143,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "south-acton",
+    "name": "South Acton",
+    "lat": 51.499822,
+    "lon": -0.26985,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "south-ealing",
+    "name": "South Ealing",
+    "lat": 51.501063,
+    "lon": -0.307403,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "south-hampstead",
+    "name": "South Hampstead",
+    "lat": 51.54156,
+    "lon": -0.178642,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "south-harrow",
+    "name": "South Harrow",
+    "lat": 51.564628,
+    "lon": -0.352367,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "south-kensington",
+    "name": "South Kensington",
+    "lat": 51.494067,
+    "lon": -0.173347,
+    "lines": [
+      "Circle",
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "south-kenton",
+    "name": "South Kenton",
+    "lat": 51.570253,
+    "lon": -0.308473,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "south-ruislip",
+    "name": "South Ruislip",
+    "lat": 51.556918,
+    "lon": -0.399184,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "south-tottenham",
+    "name": "South Tottenham",
+    "lat": 51.580533,
+    "lon": -0.071692,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "south-wimbledon",
+    "name": "South Wimbledon",
+    "lat": 51.415204,
+    "lon": -0.192412,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "south-woodford",
+    "name": "South Woodford",
+    "lat": 51.591781,
+    "lon": 0.027347,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "southall",
+    "name": "Southall",
+    "lat": 51.505972,
+    "lon": -0.378077,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "southbury",
+    "name": "Southbury",
+    "lat": 51.648346,
+    "lon": -0.052669,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "southfields",
+    "name": "Southfields",
+    "lat": 51.445305,
+    "lon": -0.206646,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "southgate",
+    "name": "Southgate",
+    "lat": 51.632249,
+    "lon": -0.12779,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "southwark",
+    "name": "Southwark",
+    "lat": 51.504281,
+    "lon": -0.105431,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "st-james-street",
+    "name": "St James Street",
+    "lat": 51.581116,
+    "lon": -0.032407,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "st-james-s-park",
+    "name": "St. James's Park",
+    "lat": 51.499421,
+    "lon": -0.134179,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "st-john-s-wood",
+    "name": "St. John's Wood",
+    "lat": 51.534769,
+    "lon": -0.17426,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "st-paul-s",
+    "name": "St. Paul's",
+    "lat": 51.5151,
+    "lon": -0.098093,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "stamford-brook",
+    "name": "Stamford Brook",
+    "lat": 51.494973,
+    "lon": -0.245851,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "stamford-hill",
+    "name": "Stamford Hill",
+    "lat": 51.57486,
+    "lon": -0.076319,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "stanmore",
+    "name": "Stanmore",
+    "lat": 51.619507,
+    "lon": -0.303004,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "stepney-green",
+    "name": "Stepney Green",
+    "lat": 51.521792,
+    "lon": -0.046776,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "stockwell",
+    "name": "Stockwell",
+    "lat": 51.471932,
+    "lon": -0.122821,
+    "lines": [
+      "Northern",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "stoke-newington",
+    "name": "Stoke Newington",
+    "lat": 51.565071,
+    "lon": -0.072687,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "stonebridge-park",
+    "name": "Stonebridge Park",
+    "lat": 51.544001,
+    "lon": -0.275869,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "stratford",
+    "name": "Stratford",
+    "lat": 51.54216,
+    "lon": -0.002832,
+    "lines": [
+      "Central",
+      "Jubilee",
+      "Overground",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "sudbury-hill",
+    "name": "Sudbury Hill",
+    "lat": 51.556998,
+    "lon": -0.336741,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "sudbury-town",
+    "name": "Sudbury Town",
+    "lat": 51.550791,
+    "lon": -0.315736,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "surrey-quays",
+    "name": "Surrey Quays",
+    "lat": 51.493284,
+    "lon": -0.047721,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "swiss-cottage",
+    "name": "Swiss Cottage",
+    "lat": 51.543634,
+    "lon": -0.174939,
+    "lines": [
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "sydenham",
+    "name": "Sydenham",
+    "lat": 51.427493,
+    "lon": -0.054509,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "taplow",
+    "name": "Taplow",
+    "lat": 51.523482,
+    "lon": -0.681438,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "temple",
+    "name": "Temple",
+    "lat": 51.510915,
+    "lon": -0.114562,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "theobalds-grove",
+    "name": "Theobalds Grove",
+    "lat": 51.692191,
+    "lon": -0.035277,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "theydon-bois",
+    "name": "Theydon Bois",
+    "lat": 51.671555,
+    "lon": 0.103452,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "tooting-bec",
+    "name": "Tooting Bec",
+    "lat": 51.435795,
+    "lon": -0.159324,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "tooting-broadway",
+    "name": "Tooting Broadway",
+    "lat": 51.42776,
+    "lon": -0.168229,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "tottenham-court-road",
+    "name": "Tottenham Court Road",
+    "lat": 51.515893,
+    "lon": -0.130595,
+    "lines": [
+      "Central",
+      "Northern",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "tottenham-hale",
+    "name": "Tottenham Hale",
+    "lat": 51.588165,
+    "lon": -0.060847,
+    "lines": [
+      "Victoria"
+    ]
+  },
+  {
+    "id": "totteridge-and-whetstone",
+    "name": "Totteridge & Whetstone",
+    "lat": 51.630558,
+    "lon": -0.179221,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "tower-hill",
+    "name": "Tower Hill",
+    "lat": 51.509751,
+    "lon": -0.076882,
+    "lines": [
+      "Circle",
+      "District"
+    ]
+  },
+  {
+    "id": "tufnell-park",
+    "name": "Tufnell Park",
+    "lat": 51.556789,
+    "lon": -0.138415,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "turkey-street",
+    "name": "Turkey Street",
+    "lat": 51.672875,
+    "lon": -0.047254,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "turnham-green",
+    "name": "Turnham Green",
+    "lat": 51.495243,
+    "lon": -0.254514,
+    "lines": [
+      "District",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "turnpike-lane",
+    "name": "Turnpike Lane",
+    "lat": 51.590152,
+    "lon": -0.10278,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "twyford",
+    "name": "Twyford",
+    "lat": 51.475534,
+    "lon": -0.863293,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "upminster",
+    "name": "Upminster",
+    "lat": 51.559085,
+    "lon": 0.251072,
+    "lines": [
+      "District",
+      "Overground"
+    ]
+  },
+  {
+    "id": "upminster-bridge",
+    "name": "Upminster Bridge",
+    "lat": 51.558359,
+    "lon": 0.235179,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "upney",
+    "name": "Upney",
+    "lat": 51.538335,
+    "lon": 0.100562,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "upper-holloway",
+    "name": "Upper Holloway",
+    "lat": 51.563331,
+    "lon": -0.130069,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "upton-park",
+    "name": "Upton Park",
+    "lat": 51.53522,
+    "lon": 0.034609,
+    "lines": [
+      "District",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "uxbridge",
+    "name": "Uxbridge",
+    "lat": 51.546686,
+    "lon": -0.47757,
+    "lines": [
+      "Metropolitan",
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "vauxhall",
+    "name": "Vauxhall",
+    "lat": 51.485941,
+    "lon": -0.12419,
+    "lines": [
+      "Victoria"
+    ]
+  },
+  {
+    "id": "victoria",
+    "name": "Victoria",
+    "lat": 51.496623,
+    "lon": -0.143737,
+    "lines": [
+      "Circle",
+      "District",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "walthamstow-central",
+    "name": "Walthamstow Central",
+    "lat": 51.582939,
+    "lon": -0.019905,
+    "lines": [
+      "Victoria",
+      "Overground"
+    ]
+  },
+  {
+    "id": "walthamstow-queens-road",
+    "name": "Walthamstow Queens Road",
+    "lat": 51.581638,
+    "lon": -0.024023,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "wandsworth-road",
+    "name": "Wandsworth Road",
+    "lat": 51.469947,
+    "lon": -0.138348,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "wanstead",
+    "name": "Wanstead",
+    "lat": 51.575612,
+    "lon": 0.028888,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "wanstead-park",
+    "name": "Wanstead Park",
+    "lat": 51.551756,
+    "lon": 0.026019,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "wapping",
+    "name": "Wapping",
+    "lat": 51.504388,
+    "lon": -0.055931,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "warren-street",
+    "name": "Warren Street",
+    "lat": 51.524335,
+    "lon": -0.138254,
+    "lines": [
+      "Northern",
+      "Victoria"
+    ]
+  },
+  {
+    "id": "warwick-avenue",
+    "name": "Warwick Avenue",
+    "lat": 51.523067,
+    "lon": -0.18333,
+    "lines": [
+      "Bakerloo"
+    ]
+  },
+  {
+    "id": "waterloo",
+    "name": "Waterloo",
+    "lat": 51.503185,
+    "lon": -0.113759,
+    "lines": [
+      "Bakerloo",
+      "Jubilee",
+      "Northern",
+      "Waterloo & City"
+    ]
+  },
+  {
+    "id": "watford",
+    "name": "Watford",
+    "lat": 51.657387,
+    "lon": -0.417994,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "watford-high-street",
+    "name": "Watford High Street",
+    "lat": 51.652375,
+    "lon": -0.392251,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "watford-junction",
+    "name": "Watford Junction",
+    "lat": 51.663563,
+    "lon": -0.396112,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "wembley-central",
+    "name": "Wembley Central",
+    "lat": 51.552135,
+    "lon": -0.296589,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "wembley-park",
+    "name": "Wembley Park",
+    "lat": 51.563867,
+    "lon": -0.279518,
+    "lines": [
+      "Jubilee",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "west-acton",
+    "name": "West Acton",
+    "lat": 51.518118,
+    "lon": -0.280774,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "west-brompton",
+    "name": "West Brompton",
+    "lat": 51.486985,
+    "lon": -0.195249,
+    "lines": [
+      "District",
+      "Overground"
+    ]
+  },
+  {
+    "id": "west-croydon",
+    "name": "West Croydon",
+    "lat": 51.378606,
+    "lon": -0.102319,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "west-drayton",
+    "name": "West Drayton",
+    "lat": 51.509942,
+    "lon": -0.472202,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "west-ealing",
+    "name": "West Ealing",
+    "lat": 51.513461,
+    "lon": -0.32159,
+    "lines": [
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "west-finchley",
+    "name": "West Finchley",
+    "lat": 51.609397,
+    "lon": -0.188426,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "west-ham",
+    "name": "West Ham",
+    "lat": 51.528091,
+    "lon": 0.004938,
+    "lines": [
+      "District",
+      "Hammersmith & City",
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "west-hampstead",
+    "name": "West Hampstead",
+    "lat": 51.547037,
+    "lon": -0.190902,
+    "lines": [
+      "Jubilee",
+      "Overground"
+    ]
+  },
+  {
+    "id": "west-hampstead-overground",
+    "name": "West Hampstead Overground",
+    "lat": 51.547282,
+    "lon": -0.191977,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "west-harrow",
+    "name": "West Harrow",
+    "lat": 51.579763,
+    "lon": -0.353494,
+    "lines": [
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "west-kensington",
+    "name": "West Kensington",
+    "lat": 51.490712,
+    "lon": -0.206305,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "west-ruislip",
+    "name": "West Ruislip",
+    "lat": 51.56964,
+    "lon": -0.437682,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "westbourne-park",
+    "name": "Westbourne Park",
+    "lat": 51.521022,
+    "lon": -0.201419,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "westminster",
+    "name": "Westminster",
+    "lat": 51.501234,
+    "lon": -0.125044,
+    "lines": [
+      "Circle",
+      "District",
+      "Jubilee"
+    ]
+  },
+  {
+    "id": "white-city",
+    "name": "White City",
+    "lat": 51.511972,
+    "lon": -0.224186,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "white-hart-lane",
+    "name": "White Hart Lane",
+    "lat": 51.60488,
+    "lon": -0.071022,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "whitechapel",
+    "name": "Whitechapel",
+    "lat": 51.519611,
+    "lon": -0.060157,
+    "lines": [
+      "District",
+      "Hammersmith & City",
+      "Overground",
+      "Elizabeth"
+    ]
+  },
+  {
+    "id": "willesden-green",
+    "name": "Willesden Green",
+    "lat": 51.549303,
+    "lon": -0.221808,
+    "lines": [
+      "Jubilee",
+      "Metropolitan"
+    ]
+  },
+  {
+    "id": "willesden-junction",
+    "name": "Willesden Junction",
+    "lat": 51.532375,
+    "lon": -0.244135,
+    "lines": [
+      "Bakerloo",
+      "Overground"
+    ]
+  },
+  {
+    "id": "wimbledon",
+    "name": "Wimbledon",
+    "lat": 51.421351,
+    "lon": -0.206547,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "wimbledon-park",
+    "name": "Wimbledon Park",
+    "lat": 51.434401,
+    "lon": -0.199471,
+    "lines": [
+      "District"
+    ]
+  },
+  {
+    "id": "wood-green",
+    "name": "Wood Green",
+    "lat": 51.597483,
+    "lon": -0.109963,
+    "lines": [
+      "Piccadilly"
+    ]
+  },
+  {
+    "id": "wood-lane",
+    "name": "Wood Lane",
+    "lat": 51.509655,
+    "lon": -0.22442,
+    "lines": [
+      "Circle",
+      "Hammersmith & City"
+    ]
+  },
+  {
+    "id": "wood-street",
+    "name": "Wood Street",
+    "lat": 51.586805,
+    "lon": -0.002227,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "woodford",
+    "name": "Woodford",
+    "lat": 51.607069,
+    "lon": 0.033834,
+    "lines": [
+      "Central"
+    ]
+  },
+  {
+    "id": "woodgrange-park",
+    "name": "Woodgrange Park",
+    "lat": 51.549238,
+    "lon": 0.044528,
+    "lines": [
+      "Overground"
+    ]
+  },
+  {
+    "id": "woodside-park",
+    "name": "Woodside Park",
+    "lat": 51.617889,
+    "lon": -0.185492,
+    "lines": [
+      "Northern"
+    ]
+  },
+  {
+    "id": "woolwich",
+    "name": "Woolwich",
+    "lat": 51.492067,
+    "lon": 0.070531,
+    "lines": [
+      "Elizabeth"
+    ]
+  }
+]
