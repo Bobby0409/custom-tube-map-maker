@@ -42,7 +42,9 @@ test("server-renders the Custom Tube Map Maker app", async () => {
   const html = await response.text();
   assert.match(html, /<title>Custom Tube Map Maker<\/title>/i);
   assert.match(html, /Unofficial fan-made London line builder/i);
+  assert.match(html, /Search for a station or tap one on the map to begin/i);
   assert.match(html, /Find station/i);
+  assert.match(html, /stations selected/i);
   assert.match(html, /Custom lines/i);
   assert.match(html, /Branches/i);
   assert.match(html, /Active line name/i);
@@ -52,6 +54,7 @@ test("server-renders the Custom Tube Map Maker app", async () => {
   assert.match(html, /Zoom in/i);
   assert.match(html, /Centre on London/i);
   assert.match(html, /OpenStreetMap contributors/i);
+  assert.match(html, /Send app feedback/i);
   assert.match(html, /https:\/\/tile\.openstreetmap\.org\//i);
   assert.match(html, /Download PNG/i);
   assert.match(html, /Baker Street/i);

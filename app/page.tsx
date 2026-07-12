@@ -76,6 +76,8 @@ const MOBILE_BREAKPOINT_QUERY = "(max-width: 768px)";
 const MOBILE_TAP_TARGET_RADIUS = 24;
 const CAMERA_SAFE_PADDING = 0.18;
 const CAMERA_ANIMATION_MS = 320;
+const APP_FEEDBACK_EMAIL = "bobbyhan0409@gmail.com";
+const APP_FEEDBACK_URL = `mailto:${APP_FEEDBACK_EMAIL}?subject=Custom%20Tube%20Map%20Maker%20feedback`;
 const EXPORT_WIDTH = 1600;
 const EXPORT_HEIGHT = 1088;
 const EXPORT_NETWORK_BOUNDS = {
@@ -95,6 +97,18 @@ const CENTRAL_LONDON_CAMERA = {
   center: { lat: 51.5116, lon: -0.113 },
   zoom: 10,
 };
+
+function formatCountLabel(
+  count: number,
+  singular: string,
+  plural = `${singular}s`,
+) {
+  return count === 1 ? singular : plural;
+}
+
+function formatSelectedStations(count: number) {
+  return `${formatCountLabel(count, "station")} selected`;
+}
 
 type LabelBox = {
   bottom: number;
@@ -2456,19 +2470,26 @@ export default function Home() {
             <div>
               <p className="panel-kicker">Live map</p>
               <h1>{displayMapName}</h1>
+              <p className="map-start-hint">
+                Search for a station or tap one on the map to begin.
+              </p>
             </div>
             <div className="map-stats" aria-label="Map statistics">
               <span>
-                <strong>{stations.length}</strong> stations
+                <strong>{stations.length}</strong>{" "}
+                {formatCountLabel(stations.length, "station")}
               </span>
               <span>
-                <strong>{customLines.length}</strong> lines
+                <strong>{customLines.length}</strong>{" "}
+                {formatCountLabel(customLines.length, "line")}
               </span>
               <span>
-                <strong>{totalBranchCount}</strong> branches
+                <strong>{totalBranchCount}</strong>{" "}
+                {formatCountLabel(totalBranchCount, "branch", "branches")}
               </span>
               <span>
-                <strong>{totalSelectedStations}</strong> chosen
+                <strong>{totalSelectedStations}</strong>{" "}
+                {formatSelectedStations(totalSelectedStations)}
               </span>
             </div>
           </div>
@@ -2605,6 +2626,7 @@ export default function Home() {
               <a href="https://www.openstreetmap.org/fixthemap">
                 Report a map issue
               </a>
+              <a href={APP_FEEDBACK_URL}>Send app feedback</a>
             </div>
             <svg
               ref={exportMapRef}
