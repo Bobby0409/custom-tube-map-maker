@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-19T00:13:17.082Z
+
+- Renamed the product from `Custom Tube Map Maker` to `Mind the Map`.
+- Updated page title, header, feedback email subject, share copy, README, package metadata, and rendered HTML tests for the new name.
+- Updated the Cloudflare Worker name to `mindthemap`, moving production to `https://mindthemap.mytubemap.workers.dev`.
+- Replaced the old branded Open Graph PNG with a text-accurate SVG social card.
+- Deployed Git SHA `2e06b0418a9541551fd41de8a2ccb74b743348ef` to production with Cloudflare version `0768b3d8-8a36-4993-9b8c-3f10c20bc8d7`.
+- Release notes can be verified with the Git diff listed in DEPLOYMENTS.md.
+
 ## 2026-07-12T18:47:06Z
 
 - Updated the page header to use the product name as the main title, a new subtitle, and the visible unofficial Transport for London disclaimer.

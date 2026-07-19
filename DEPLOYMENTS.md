@@ -1,5 +1,17 @@
 # Deployments
 
+## 2026-07-19T00:13:17.082Z - Production deployment
+
+- Production URL: https://mindthemap.mytubemap.workers.dev
+- Cloudflare version ID: `0768b3d8-8a36-4993-9b8c-3f10c20bc8d7`
+- Git SHA: `2e06b0418a9541551fd41de8a2ccb74b743348ef`
+- Previous Cloudflare version ID: `85aa3c2c-5785-4fbe-98eb-d1972118379d`
+- Previous Git SHA: `5eb4d573fdfebfe74cb42264a1378bcf2a2254c7`
+- Verified diff command: `git diff --stat 5eb4d573fdfebfe74cb42264a1378bcf2a2254c7..2e06b0418a9541551fd41de8a2ccb74b743348ef`
+- Wrangler command: `npx wrangler deploy --config wrangler.json` from `dist/server`
+- Validation: `npm run lint`, `npm test`, `npm run build`, production HTTP 200 check.
+- Smoke test: production showed `Mind the Map` as the main title, metadata and canonical URLs pointed at `https://mindthemap.mytubemap.workers.dev/`, the new `/og.svg` social card returned HTTP 200, and the old `/og.png` returned HTTP 404.
+
 ## 2026-07-12T18:47:06Z - Production deployment
 
 - Production URL: https://custom-tube-map-maker.mytubemap.workers.dev
