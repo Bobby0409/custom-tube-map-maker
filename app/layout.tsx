@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,6 +17,10 @@ const geistMono = Geist_Mono({
 const siteTitle = "Mind the Map";
 const siteDescription =
   "Create a fictional London Tube line from real stations, colour it, name it, and export a shareable map.";
+const cloudflareWebAnalyticsSiteToken = "de2a228a7f21477bbb37ab73a081de4f";
+const cloudflareWebAnalyticsToken =
+  process.env.NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim() ||
+  cloudflareWebAnalyticsSiteToken;
 
 async function getRequestBaseUrl() {
   const requestHeaders = await headers();
@@ -80,6 +85,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        {cloudflareWebAnalyticsToken ? (
+          <Script
+            data-cf-beacon={JSON.stringify({
+              token: cloudflareWebAnalyticsToken,
+            })}
+            id="cloudflare-web-analytics"
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            strategy="afterInteractive"
+            type="module"
+          />
+        ) : null}
       </body>
     </html>
   );

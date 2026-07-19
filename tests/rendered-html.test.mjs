@@ -84,6 +84,8 @@ test("server-renders the Mind the Map app", async () => {
   assert.match(html, /Shepherd&#x27;s Bush/i);
   assert.match(html, /Heathrow Terminals 2 &amp; 3/i);
   assert.match(html, /Reading/i);
+  assert.match(html, /static\.cloudflareinsights\.com\/beacon\.min\.js/i);
+  assert.match(html, /de2a228a7f21477bbb37ab73a081de4f/i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
   assert.doesNotMatch(html, /See the launch plan|Explore the MVP/i);
 });
@@ -112,6 +114,10 @@ test("keeps local station data and removes starter preview metadata", async () =
   assert.match(layout, /generateMetadata/);
   assert.match(layout, /openGraph/);
   assert.match(layout, /twitter/);
+  assert.match(layout, /NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN/);
+  assert.match(layout, /de2a228a7f21477bbb37ab73a081de4f/);
+  assert.match(layout, /static\.cloudflareinsights\.com\/beacon\.min\.js/);
+  assert.match(layout, /data-cf-beacon/);
   const requiredTubeLines = [
     "Bakerloo",
     "Central",

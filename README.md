@@ -33,6 +33,20 @@ npm test
 
 The site is built with vinext, Next.js, React, TypeScript, and Tailwind CSS.
 
+## Analytics
+
+Cloudflare Web Analytics is enabled with the public site token for
+`mindthemap.mytubemap.workers.dev`.
+
+To override the token for another environment, set:
+
+```bash
+NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN=your_cloudflare_site_token
+```
+
+Cloudflare Web Analytics site tokens are included in the browser snippet and
+are not secret credentials.
+
 ## Production Deployment
 
 Production deploys should go through the guarded deployment command:
