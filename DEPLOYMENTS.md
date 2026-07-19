@@ -1,5 +1,17 @@
 # Deployments
 
+## 2026-07-19T01:24:00.169Z - Production deployment
+
+- Production URL: https://mindthemap.mytubemap.workers.dev
+- Cloudflare version ID: `0ac19081-b12c-426a-a363-47482c6dd630`
+- Git SHA: `703f8d8307a3032d63bd0b00f8ae2453c4912bf5`
+- Previous Cloudflare version ID: `0768b3d8-8a36-4993-9b8c-3f10c20bc8d7`
+- Previous Git SHA: `2e06b0418a9541551fd41de8a2ccb74b743348ef`
+- Verified diff command: `git diff --stat 2e06b0418a9541551fd41de8a2ccb74b743348ef..703f8d8307a3032d63bd0b00f8ae2453c4912bf5`
+- Wrangler command: `npx wrangler deploy --config wrangler.json` from `dist/server`
+- Validation: `npm run lint`, `npm test`, `npm run build`, production HTTP 200 check.
+- Smoke test: production showed the compact map toolbar with no `Your Tube map` heading; user-facing branch controls were absent; line cards exposed `Change colour for My Tube Line` and `Rename My Tube Line`; `Undo` and `Reset` appeared inside the `Custom lines` section.
+
 ## 2026-07-19T00:13:17.082Z - Production deployment
 
 - Production URL: https://mindthemap.mytubemap.workers.dev

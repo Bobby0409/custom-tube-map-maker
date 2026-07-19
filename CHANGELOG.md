@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-19T01:24:00.169Z
+
+- Simplified the MVP line-building controls by removing user-facing branch creation.
+- Removed the large `Your Tube map` section heading and tightened the map toolbar spacing.
+- Integrated line colour and line-name editing into the `Custom lines` cards with colour-dot and pencil controls.
+- Moved `Undo` and `Reset` closer to the active line controls.
+- Deployed Git SHA `703f8d8307a3032d63bd0b00f8ae2453c4912bf5` to production with Cloudflare version `0ac19081-b12c-426a-a363-47482c6dd630`.
+- Release notes can be verified with the Git diff listed in DEPLOYMENTS.md.
+
 ## 2026-07-19T00:13:17.082Z
 
 - Renamed the product from `Custom Tube Map Maker` to `Mind the Map`.
