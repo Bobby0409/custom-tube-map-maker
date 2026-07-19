@@ -1,4 +1,4 @@
-# Custom Tube Map Maker
+# Mind the Map
 
 Create a fictional London Tube line from real stations, choose a colour, name it,
 and export the finished map as a PNG.

@@ -77,7 +77,7 @@ const MOBILE_TAP_TARGET_RADIUS = 24;
 const CAMERA_SAFE_PADDING = 0.18;
 const CAMERA_ANIMATION_MS = 320;
 const APP_FEEDBACK_EMAIL = "bobbyhan0409@gmail.com";
-const APP_FEEDBACK_URL = `mailto:${APP_FEEDBACK_EMAIL}?subject=Custom%20Tube%20Map%20Maker%20feedback`;
+const APP_FEEDBACK_URL = `mailto:${APP_FEEDBACK_EMAIL}?subject=Mind%20the%20Map%20feedback`;
 const EXPORT_WIDTH = 1600;
 const EXPORT_HEIGHT = 1088;
 const EXPORT_NETWORK_BOUNDS = {
@@ -1923,7 +1923,7 @@ export default function Home() {
       });
       const shareData: ShareData = {
         title: displayMapName,
-        text: `I made ${displayMapName} with Custom Tube Map Maker.`,
+        text: `I made ${displayMapName} with Mind the Map.`,
         files: [file],
       };
       const navigatorWithShare = navigator as Navigator & {
@@ -2458,7 +2458,7 @@ export default function Home() {
     <main className="app-shell">
       <header className="app-header">
         <div className="header-copy">
-          <Link className="wordmark" href="/" aria-label="Custom Tube Map Maker home">
+          <Link className="wordmark" href="/" aria-label="Mind the Map home">
             <svg
               aria-hidden="true"
               className="route-mark"
@@ -2471,7 +2471,7 @@ export default function Home() {
               <circle className="route-mark-node" cx="19" cy="18" r="4" />
               <circle className="route-mark-node" cx="32" cy="18" r="4" />
             </svg>
-            <h1>Custom Tube Map Maker</h1>
+            <h1>Mind the Map</h1>
           </Link>
           <p className="app-subtitle">Build your own London Tube network</p>
         </div>
@@ -2480,7 +2480,7 @@ export default function Home() {
         </p>
       </header>
 
-      <section className="maker-layout" aria-label="Custom Tube line builder">
+      <section className="maker-layout" aria-label="Mind the Map line builder">
         <div className="map-panel">
           <div className="map-toolbar">
             <div>

@@ -2,7 +2,7 @@ import { execFileSync, spawnSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const productionUrl = "https://custom-tube-map-maker.mytubemap.workers.dev";
+const productionUrl = "https://mindthemap.mytubemap.workers.dev";
 
 function run(command, args, options = {}) {
   const result = spawnSync(command, args, {

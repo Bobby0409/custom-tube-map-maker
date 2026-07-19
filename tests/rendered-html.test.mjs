@@ -34,14 +34,16 @@ async function optionalPreviewFiles() {
   }
 }
 
-test("server-renders the Custom Tube Map Maker app", async () => {
+test("server-renders the Mind the Map app", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Custom Tube Map Maker<\/title>/i);
-  assert.match(html, /Custom Tube Map Maker/i);
+  assert.match(html, /<title>Mind the Map<\/title>/i);
+  assert.match(html, /Mind the Map/i);
+  assert.doesNotMatch(html, /Custom Tube Map Maker/i);
+  assert.match(html, /\/og\.svg/i);
   assert.match(html, /Build your own London Tube network/i);
   assert.match(
     html,
@@ -62,6 +64,7 @@ test("server-renders the Custom Tube Map Maker app", async () => {
   assert.match(html, /Centre on London/i);
   assert.match(html, /© OpenStreetMap contributors/i);
   assert.match(html, /Send app feedback/i);
+  assert.match(html, /Mind%20the%20Map%20feedback/i);
   assert.doesNotMatch(html, /Live map/i);
   assert.doesNotMatch(html, /Report a map issue/i);
   assert.match(html, /https:\/\/tile\.openstreetmap\.org\//i);

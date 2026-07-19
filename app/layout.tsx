@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteTitle = "Custom Tube Map Maker";
+const siteTitle = "Mind the Map";
 const siteDescription =
   "Create a fictional London Tube line from real stations, colour it, name it, and export a shareable map.";
 
@@ -32,7 +32,7 @@ async function getRequestBaseUrl() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const metadataBase = await getRequestBaseUrl();
-  const imageUrl = new URL("/og.png", metadataBase).toString();
+  const imageUrl = new URL("/og.svg", metadataBase).toString();
 
   return {
     metadataBase,
@@ -51,7 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: "Custom Tube Map Maker launch card with a fictional line map.",
+          alt: "Mind the Map launch card with a fictional line map.",
         },
       ],
       type: "website",
