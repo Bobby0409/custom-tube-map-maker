@@ -49,24 +49,30 @@ test("server-renders the Mind the Map app", async () => {
     html,
     /Unofficial fan-made project\. Not affiliated with Transport for London\./i,
   );
-  assert.match(html, /Your Tube map/i);
   assert.match(html, /My Tube Line/i);
   assert.match(html, /Search for a station or tap one on the map to begin/i);
   assert.match(html, /Find station/i);
   assert.match(html, /stations selected/i);
+  assert.match(html, /Selected stations/i);
   assert.match(html, /Custom lines/i);
-  assert.match(html, /Branches/i);
-  assert.match(html, /Active line name/i);
-  assert.match(html, /Active branch name/i);
+  assert.match(html, /Change colour for My Tube Line/i);
+  assert.match(html, /Rename My Tube Line/i);
   assert.match(html, /Add line/i);
-  assert.match(html, /Add branch/i);
   assert.match(html, /Zoom in/i);
   assert.match(html, /Centre on London/i);
+  assert.match(html, /Fit current line/i);
   assert.match(html, /© OpenStreetMap contributors/i);
   assert.match(html, /Send app feedback/i);
   assert.match(html, /Mind%20the%20Map%20feedback/i);
   assert.doesNotMatch(html, /Live map/i);
   assert.doesNotMatch(html, /Report a map issue/i);
+  assert.doesNotMatch(html, /Your Tube map/i);
+  assert.doesNotMatch(html, /Branches/i);
+  assert.doesNotMatch(html, /Active line name/i);
+  assert.doesNotMatch(html, /Active line colour/i);
+  assert.doesNotMatch(html, /Active branch name/i);
+  assert.doesNotMatch(html, /Add branch/i);
+  assert.doesNotMatch(html, /Fit current branch/i);
   assert.match(html, /https:\/\/tile\.openstreetmap\.org\//i);
   assert.match(html, /Download PNG/i);
   assert.match(html, /Baker Street/i);
@@ -97,8 +103,9 @@ test("keeps local station data and removes starter preview metadata", async () =
   assert.match(page, /shareMap/);
   assert.match(page, /focusStation/);
   assert.match(page, /createNewLine/);
-  assert.match(page, /createNewBranch/);
   assert.match(page, /activeBranch/);
+  assert.doesNotMatch(page, /createNewBranch/);
+  assert.doesNotMatch(page, /removeActiveBranch/);
   assert.match(page, /customLines/);
   assert.match(page, /STATION_LABEL_ZOOM/);
   assert.match(page, /showStationLabel/);

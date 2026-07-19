@@ -313,10 +313,6 @@ function displayLineName(line: CustomLine) {
   return line.name.trim() || "Untitled line";
 }
 
-function displayBranchName(branch: CustomBranch) {
-  return branch.name.trim() || "Untitled branch";
-}
-
 function displayLegendLineName(line: CustomLine) {
   const name = displayLineName(line);
 
@@ -948,6 +944,10 @@ export default function Home() {
   );
   const [statusMessage, setStatusMessage] = useState("");
   const [isExporting, setIsExporting] = useState(false);
+  const [editingLineId, setEditingLineId] = useState<string | null>(null);
+  const [colourEditorLineId, setColourEditorLineId] = useState<string | null>(
+    null,
+  );
   const [camera, setCamera] = useState<MapCamera>(() => centralLondonCamera());
   const [isMobileViewport, setIsMobileViewport] = useState(false);
   const [isPanning, setIsPanning] = useState(false);
@@ -999,11 +999,6 @@ export default function Home() {
   const activeBranch =
     activeLine.branches.find((branch) => branch.id === activeLine.activeBranchId) ??
     activeLine.branches[0];
-  const activeBranchIndex = Math.max(
-    0,
-    activeLine.branches.findIndex((branch) => branch.id === activeBranch.id),
-  );
-  const activeBranchName = displayBranchName(activeBranch);
 
   const selectedStationIdSet = useMemo(
     () => new Set(activeBranch.stationIds),
@@ -1107,10 +1102,6 @@ export default function Home() {
       ),
     0,
   );
-  const totalBranchCount = customLines.reduce(
-    (total, line) => total + line.branches.length,
-    0,
-  );
   const legendLines = useMemo(
     () =>
       customLines.filter((line) =>
@@ -1140,7 +1131,7 @@ export default function Home() {
   const latestSelectedStationId =
     activeBranch.stationIds[activeBranch.stationIds.length - 1] ?? null;
   const canCentreLatestStation = Boolean(latestSelectedStationId);
-  const canFitActiveBranch = selectedPoints.length > 0;
+  const canFitCurrentLine = selectedPoints.length > 0;
 
   function cancelCameraAnimation() {
     const animation = cameraAnimationRef.current;
@@ -1340,7 +1331,7 @@ export default function Home() {
     });
   }
 
-  function fitActiveBranch() {
+  function fitCurrentLine() {
     if (selectedPoints.length === 0) {
       return;
     }
@@ -1381,7 +1372,7 @@ export default function Home() {
       },
       { force: true },
     );
-    setStatusMessage(`${activeBranchName} fitted on the map.`);
+    setStatusMessage(`${activeLineName} fitted on the map.`);
   }
 
   function handleMapWheel(event: WheelEvent<SVGSVGElement>) {
@@ -1628,6 +1619,15 @@ export default function Home() {
     );
   }
 
+  function updateLineById(
+    lineId: string,
+    updater: (line: CustomLine) => CustomLine,
+  ) {
+    setCustomLines((current) =>
+      current.map((line) => (line.id === lineId ? updater(line) : line)),
+    );
+  }
+
   function updateActiveBranch(updater: (branch: CustomBranch) => CustomBranch) {
     updateActiveLine((line) => ({
       ...line,
@@ -1706,6 +1706,8 @@ export default function Home() {
       const nextLine = makeLine(`line-${Date.now()}`, current.length);
 
       setActiveLineId(nextLine.id);
+      setEditingLineId(nextLine.id);
+      setColourEditorLineId(null);
       setStatusMessage(`${displayLineName(nextLine)} created.`);
 
       return [...current, nextLine];
@@ -1721,6 +1723,8 @@ export default function Home() {
         activeBranchId: branch.id,
         branches: [branch],
       }));
+      setEditingLineId(null);
+      setColourEditorLineId(null);
       setStatusMessage(`${activeLineName} cleared.`);
       return;
     }
@@ -1730,55 +1734,17 @@ export default function Home() {
       const nextActiveLine = nextLines[Math.max(0, activeLineIndex - 1)];
 
       setActiveLineId(nextActiveLine.id);
+      setEditingLineId(null);
+      setColourEditorLineId(null);
       setStatusMessage(`${activeLineName} removed.`);
 
       return nextLines;
     });
   }
 
-  function createNewBranch() {
-    updateActiveLine((line) => {
-      const nextBranch = makeBranch(
-        `${line.id}-branch-${Date.now()}`,
-        line.branches.length,
-      );
-
-      setStatusMessage(`${displayBranchName(nextBranch)} created on ${activeLineName}.`);
-
-      return {
-        ...line,
-        activeBranchId: nextBranch.id,
-        branches: [...line.branches, nextBranch],
-      };
-    });
-  }
-
-  function removeActiveBranch() {
-    if (activeLine.branches.length === 1) {
-      updateActiveBranch((branch) => ({ ...branch, stationIds: [] }));
-      setStatusMessage(`${activeBranchName} cleared.`);
-      return;
-    }
-
-    updateActiveLine((line) => {
-      const nextBranches = line.branches.filter(
-        (branch) => branch.id !== activeBranch.id,
-      );
-      const nextActiveBranch = nextBranches[Math.max(0, activeBranchIndex - 1)];
-
-      setStatusMessage(`${activeBranchName} removed from ${activeLineName}.`);
-
-      return {
-        ...line,
-        activeBranchId: nextActiveBranch.id,
-        branches: nextBranches,
-      };
-    });
-  }
-
   function addStation(stationId: string) {
     if (selectedStationIdSet.has(stationId)) {
-      setStatusMessage("That station is already on this branch.");
+      setStatusMessage("That station is already on this line.");
       return;
     }
 
@@ -1793,8 +1759,8 @@ export default function Home() {
     });
     setStatusMessage(
       station
-        ? `${station.name} added to ${activeLineName} / ${activeBranchName}.`
-        : `Station added to ${activeLineName} / ${activeBranchName}.`,
+        ? `${station.name} added to ${activeLineName}.`
+        : `Station added to ${activeLineName}.`,
     );
   }
 
@@ -1816,9 +1782,7 @@ export default function Home() {
         : null;
 
       if (removedStation) {
-        setStatusMessage(
-          `${removedStation.name} removed from ${activeLineName} / ${activeBranchName}.`,
-        );
+        setStatusMessage(`${removedStation.name} removed from ${activeLineName}.`);
       }
 
       return { ...branch, stationIds: branch.stationIds.slice(0, -1) };
@@ -1827,7 +1791,7 @@ export default function Home() {
 
   function resetLine() {
     updateActiveBranch((branch) => ({ ...branch, stationIds: [] }));
-    setStatusMessage(`${activeLineName} / ${activeBranchName} reset.`);
+    setStatusMessage(`${activeLineName} reset.`);
   }
 
   async function createPngBlob() {
@@ -1997,30 +1961,8 @@ export default function Home() {
     const legendX = options.view ? options.view.x + 24 * legendScale : 24;
     const legendY = options.view ? options.view.y + 24 * legendScale : 24;
     const legendWidth = 330 * legendScale;
-    const legendEntries = legendLines.map((line) => {
-      const activeBranches = line.branches.filter(
-        (branch) => branch.stationIds.length > 0,
-      );
-
-      return {
-        branchSummary:
-          activeBranches.length > 1
-            ? activeBranches
-                .map((branch) => displayBranchName(branch))
-                .join(" / ")
-                .slice(0, 42)
-            : "",
-        line,
-      };
-    });
-    const legendHeight =
-      (68 +
-        legendEntries.reduce(
-          (total, entry) => total + (entry.branchSummary ? 43 : 31),
-          0,
-        ) +
-        25) *
-      legendScale;
+    const legendEntries = legendLines.map((line) => ({ line }));
+    const legendHeight = (68 + legendEntries.length * 31 + 25) * legendScale;
 
     return (
       <>
@@ -2121,11 +2063,7 @@ export default function Home() {
 
             return route.points.length > 1 ? (
               <g key={`${route.line.id}-${route.branch.id}`}>
-                <title>
-                  {`${displayLineName(route.line)} - ${displayBranchName(
-                    route.branch,
-                  )}`}
-                </title>
+                <title>{displayLineName(route.line)}</title>
                 <polyline
                   points={route.routePoints}
                   fill="none"
@@ -2361,11 +2299,7 @@ export default function Home() {
             {legendEntries.map((entry, index) => {
               const rowOffset = legendEntries
                 .slice(0, index)
-                .reduce(
-                  (total, previousEntry) =>
-                    total + (previousEntry.branchSummary ? 43 : 31),
-                  52,
-                );
+                .reduce((total) => total + 31, 52);
               const entryY = legendY + rowOffset * legendScale;
 
               return (
@@ -2389,18 +2323,6 @@ export default function Home() {
                   >
                     {displayLegendLineName(entry.line)}
                   </text>
-                  {entry.branchSummary ? (
-                    <text
-                      x={legendX + 90 * legendScale}
-                      y={entryY + 23 * legendScale}
-                      fill="#526071"
-                      fontFamily="Arial, Helvetica, sans-serif"
-                      fontSize={10.5 * legendScale}
-                      fontWeight="700"
-                    >
-                      {entry.branchSummary}
-                    </text>
-                  ) : null}
                 </g>
               );
             })}
@@ -2408,10 +2330,7 @@ export default function Home() {
               cx={legendX + 28 * legendScale}
               cy={
                 legendY +
-                (legendEntries.reduce(
-                  (total, entry) => total + (entry.branchSummary ? 43 : 31),
-                  58,
-                ) *
+                (legendEntries.reduce((total) => total + 31, 58) *
                   legendScale)
               }
               r={6 * legendScale}
@@ -2423,10 +2342,7 @@ export default function Home() {
               x={legendX + 46 * legendScale}
               y={
                 legendY +
-                (legendEntries.reduce(
-                  (total, entry) => total + (entry.branchSummary ? 43 : 31),
-                  63,
-                ) *
+                (legendEntries.reduce((total) => total + 31, 63) *
                   legendScale)
               }
               fill="#526071"
@@ -2483,12 +2399,9 @@ export default function Home() {
       <section className="maker-layout" aria-label="Mind the Map line builder">
         <div className="map-panel">
           <div className="map-toolbar">
-            <div>
-              <h2>Your Tube map</h2>
-              <p className="map-start-hint">
-                Search for a station or tap one on the map to begin.
-              </p>
-            </div>
+            <p className="map-start-hint">
+              Search for a station or tap one on the map to begin.
+            </p>
             <div className="map-stats" aria-label="Map statistics">
               <span>
                 <strong>{stations.length}</strong>{" "}
@@ -2497,10 +2410,6 @@ export default function Home() {
               <span>
                 <strong>{customLines.length}</strong>{" "}
                 {formatCountLabel(customLines.length, "line")}
-              </span>
-              <span>
-                <strong>{totalBranchCount}</strong>{" "}
-                {formatCountLabel(totalBranchCount, "branch", "branches")}
               </span>
               <span>
                 <strong>{totalSelectedStations}</strong>{" "}
@@ -2595,10 +2504,10 @@ export default function Home() {
               </button>
               <button
                 className="mobile-map-control"
-                aria-label="Fit current branch"
-                disabled={!canFitActiveBranch}
-                onClick={fitActiveBranch}
-                title="Fit current branch"
+                aria-label="Fit current line"
+                disabled={!canFitCurrentLine}
+                onClick={fitCurrentLine}
+                title="Fit current line"
                 type="button"
               >
                 ↗
@@ -2724,25 +2633,134 @@ export default function Home() {
               <strong>{customLines.length}</strong>
             </div>
             <div className="line-tabs" aria-label="Custom line list">
-              {customLines.map((line) => (
-                <button
-                  aria-pressed={line.id === activeLine.id}
-                  key={line.id}
-                  onClick={() => setActiveLineId(line.id)}
-                  type="button"
-                >
-                  <span
-                    className="line-chip"
-                    style={{ backgroundColor: line.colour } as CSSProperties}
-                  />
-                  <span>
-                    {displayLineName(line)}
-                    <em>{`${line.branches.length} branch${
-                      line.branches.length === 1 ? "" : "es"
-                    }`}</em>
-                  </span>
-                </button>
-              ))}
+              {customLines.map((line) => {
+                const lineName = displayLineName(line);
+                const isActiveLine = line.id === activeLine.id;
+                const isEditingName = editingLineId === line.id;
+                const isEditingColour = colourEditorLineId === line.id;
+
+                return (
+                  <div
+                    className={
+                      isActiveLine
+                        ? "line-card-shell line-card-shell-active"
+                        : "line-card-shell"
+                    }
+                    key={line.id}
+                  >
+                    <div className="line-card">
+                      <button
+                        aria-expanded={isEditingColour}
+                        aria-label={`Change colour for ${lineName}`}
+                        className="line-colour-button"
+                        onClick={() => {
+                          setActiveLineId(line.id);
+                          setEditingLineId(null);
+                          setColourEditorLineId((current) =>
+                            current === line.id ? null : line.id,
+                          );
+                        }}
+                        title={`Change colour for ${lineName}`}
+                        type="button"
+                      >
+                        <span
+                          className="line-chip"
+                          style={{ backgroundColor: line.colour } as CSSProperties}
+                        />
+                      </button>
+                      {isEditingName ? (
+                        <input
+                          aria-label={`Line name for ${lineName}`}
+                          autoFocus
+                          className="line-name-input"
+                          maxLength={42}
+                          onBlur={() => setEditingLineId(null)}
+                          onChange={(event) =>
+                            updateLineById(line.id, (currentLine) => ({
+                              ...currentLine,
+                              name: event.target.value,
+                            }))
+                          }
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === "Escape") {
+                              event.currentTarget.blur();
+                            }
+                          }}
+                          placeholder="Name your line"
+                          type="text"
+                          value={line.name}
+                        />
+                      ) : (
+                        <button
+                          aria-pressed={isActiveLine}
+                          className="line-name-button"
+                          onClick={() => setActiveLineId(line.id)}
+                          type="button"
+                        >
+                          {lineName}
+                        </button>
+                      )}
+                      <button
+                        aria-label={`Rename ${lineName}`}
+                        className="line-edit-button"
+                        onClick={() => {
+                          setActiveLineId(line.id);
+                          setColourEditorLineId(null);
+                          setEditingLineId(line.id);
+                        }}
+                        title={`Rename ${lineName}`}
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M4 20h4.4L19.1 9.3l-4.4-4.4L4 15.6V20Z" />
+                          <path d="m16 3.6 4.4 4.4" />
+                        </svg>
+                      </button>
+                    </div>
+                    {isEditingColour ? (
+                      <div className="line-colour-panel">
+                        <input
+                          aria-label={`Custom colour for ${lineName}`}
+                          className="line-colour-native"
+                          onChange={(event) =>
+                            updateLineById(line.id, (currentLine) => ({
+                              ...currentLine,
+                              colour: event.target.value,
+                            }))
+                          }
+                          type="color"
+                          value={line.colour}
+                        />
+                        <div className="swatch-grid" aria-label={`${lineName} colour presets`}>
+                          {tubePalette.map((colour) => (
+                            <button
+                              aria-label={colour.name}
+                              aria-pressed={line.colour === colour.value}
+                              className="swatch-button"
+                              key={colour.value}
+                              onClick={() =>
+                                updateLineById(line.id, (currentLine) => ({
+                                  ...currentLine,
+                                  colour: colour.value,
+                                }))
+                              }
+                              style={
+                                { backgroundColor: colour.value } as CSSProperties
+                              }
+                              title={colour.name}
+                              type="button"
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+                  </div>
+                );
+              })}
             </div>
             <div className="control-row line-actions">
               <button className="tool-button" onClick={createNewLine} type="button">
@@ -2756,126 +2774,7 @@ export default function Home() {
                 {customLines.length === 1 ? "Clear line" : "Remove line"}
               </button>
             </div>
-          </div>
-
-          <div className="control-section branches-section">
-            <div className="selected-heading">
-              <span>Branches</span>
-              <strong>{activeLine.branches.length}</strong>
-            </div>
-            <div className="branch-tabs" aria-label="Branch list">
-              {activeLine.branches.map((branch) => (
-                <button
-                  aria-pressed={branch.id === activeBranch.id}
-                  key={branch.id}
-                  onClick={() =>
-                    updateActiveLine((line) => ({
-                      ...line,
-                      activeBranchId: branch.id,
-                    }))
-                  }
-                  type="button"
-                >
-                  <span>{displayBranchName(branch)}</span>
-                  <em>{`${branch.stationIds.length} stop${
-                    branch.stationIds.length === 1 ? "" : "s"
-                  }`}</em>
-                </button>
-              ))}
-            </div>
-            <div className="control-row branch-actions">
-              <button className="tool-button" onClick={createNewBranch} type="button">
-                Add branch
-              </button>
-              <button
-                className="tool-button"
-                onClick={removeActiveBranch}
-                type="button"
-              >
-                {activeLine.branches.length === 1 ? "Clear branch" : "Remove branch"}
-              </button>
-            </div>
-          </div>
-
-          <div className="control-section">
-            <label className="field-label" htmlFor="line-name">
-              Active line name
-            </label>
-            <input
-              id="line-name"
-              className="text-field"
-              maxLength={42}
-              onChange={(event) =>
-                updateActiveLine((line) => ({
-                  ...line,
-                  name: event.target.value,
-                }))
-              }
-              placeholder="Name your line"
-              type="text"
-              value={activeLine.name}
-            />
-          </div>
-
-          <div className="control-section">
-            <label className="field-label" htmlFor="branch-name">
-              Active branch name
-            </label>
-            <input
-              id="branch-name"
-              className="text-field"
-              maxLength={42}
-              onChange={(event) =>
-                updateActiveBranch((branch) => ({
-                  ...branch,
-                  name: event.target.value,
-                }))
-              }
-              placeholder="Name this branch"
-              type="text"
-              value={activeBranch.name}
-            />
-          </div>
-
-          <div className="control-section">
-            <div className="field-label">Active line colour</div>
-            <div className="colour-row">
-              <input
-                aria-label="Custom line colour"
-                className="colour-input"
-                onChange={(event) =>
-                  updateActiveLine((line) => ({
-                    ...line,
-                    colour: event.target.value,
-                  }))
-                }
-                type="color"
-                value={activeLine.colour}
-              />
-              <div className="swatch-grid" aria-label="Tube colour presets">
-                {tubePalette.map((colour) => (
-                  <button
-                    aria-label={colour.name}
-                    aria-pressed={activeLine.colour === colour.value}
-                    className="swatch-button"
-                    key={colour.value}
-                    onClick={() =>
-                      updateActiveLine((line) => ({
-                        ...line,
-                        colour: colour.value,
-                      }))
-                    }
-                    style={{ backgroundColor: colour.value } as CSSProperties}
-                    title={colour.name}
-                    type="button"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="control-section">
-            <div className="control-row">
+            <div className="control-row line-quick-actions">
               <button
                 className="tool-button"
                 disabled={selectedPoints.length === 0}
@@ -2897,7 +2796,7 @@ export default function Home() {
 
           <div className="control-section selected-section">
             <div className="selected-heading">
-              <span>{activeBranchName} stations</span>
+              <span>Selected stations</span>
               <strong>{selectedPoints.length}</strong>
             </div>
             {selectedPoints.length > 0 ? (
@@ -2918,7 +2817,7 @@ export default function Home() {
                 ))}
               </ol>
             ) : (
-              <p className="empty-state">No stations selected on this branch.</p>
+              <p className="empty-state">No stations selected yet.</p>
             )}
           </div>
 
@@ -2941,7 +2840,7 @@ export default function Home() {
             </button>
             <p aria-live="polite" className="status-line">
               {statusMessage ||
-                "PNG export is ready after any branch has two stations."}
+                "PNG export is ready after any line has two stations."}
             </p>
           </div>
         </aside>
