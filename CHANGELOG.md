@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-19T17:23:45.835Z
+
+- Added Cloudflare Web Analytics so basic visits and referrers can be reviewed from the Cloudflare dashboard.
+- Documented the analytics setup and public site-token override in the README.
+- Added smoke-test coverage to confirm the analytics beacon is included in rendered output.
+- Deployed Git SHA `5f6d5c234670618d43634d426db8c21f88fdd4fc` to production with Cloudflare version `5d4fb56f-9e37-41f4-b43e-c51603084d6a`.
+- Release notes can be verified with the Git diff listed in DEPLOYMENTS.md.
+
 ## 2026-07-19T01:24:00.169Z
 
 - Simplified the MVP line-building controls by removing user-facing branch creation.

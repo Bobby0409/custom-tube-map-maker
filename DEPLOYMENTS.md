@@ -1,5 +1,18 @@
 # Deployments
 
+## 2026-07-19T17:23:45.835Z - Production deployment
+
+- Production URL: https://mindthemap.mytubemap.workers.dev
+- Cloudflare version ID: `5d4fb56f-9e37-41f4-b43e-c51603084d6a`
+- Git SHA: `5f6d5c234670618d43634d426db8c21f88fdd4fc`
+- Previous Cloudflare version ID: `0ac19081-b12c-426a-a363-47482c6dd630`
+- Previous Git SHA: `703f8d8307a3032d63bd0b00f8ae2453c4912bf5`
+- Verified diff command: `git diff --stat 703f8d8307a3032d63bd0b00f8ae2453c4912bf5..5f6d5c234670618d43634d426db8c21f88fdd4fc`
+- Wrangler command: `npx wrangler deploy --config wrangler.json` from `dist/server`
+- Validation: `npm run lint`, `npm test`, `npm run build`, production HTTP 200 check.
+- Smoke test: production HTML includes `https://static.cloudflareinsights.com/beacon.min.js`, `data-cf-beacon`, and the configured Cloudflare Web Analytics site token. `Mind the Map` remained visible on the production page.
+- Limitation: Cloudflare Web Analytics metrics can take time to appear in the Cloudflare dashboard after the beacon is first deployed.
+
 ## 2026-07-19T01:24:00.169Z - Production deployment
 
 - Production URL: https://mindthemap.mytubemap.workers.dev
